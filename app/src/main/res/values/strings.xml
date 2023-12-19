@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Dados2023</string>
+    <string name="text_button_play">Jugar una partida</string>
+    <string name="text_label_j1">Jugador 1</string>
+    <string name="text_label_j2">Jugador 2</string>
+    <string name="text_label_j3">Jugador 3</string>
+    <string name="text_label_j1_ganar">J1 Ganadas:0</string>
+    <string name="text_label_j1_empate">J1 Empate:0</string>
+    <string name="text_label_j1_perder">J1 Perdidas:0</string>
+    <string name="text_label_j2_ganar">J2 Ganadas:0</string>
+    <string name="text_label_j2_empate">J2 Empate:0</string>
+    <string name="text_label_j2_perder">J2 Perdidas:0</string>
+    <string name="text_label_j3_ganar">J3 Ganadas:0</string>
+    <string name="text_label_j3_empate">J3 Empate:0</string>
+    <string name="text_label_j3_perder">J3 Perdidas:0</string>
+
+
+    <string name="text_label_resultado">El resultado es:</string>
+</resources>

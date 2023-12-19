@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/tvLabelJugador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_j1"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelJ1D1"
+        app:layout_constraintEnd_toStartOf="@+id/tvLabelJugador2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLabelJugador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_j2"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelJ2D1"
+        app:layout_constraintEnd_toStartOf="@id/tvLabelJugador3"
+        app:layout_constraintStart_toEndOf="@+id/tvLabelJugador1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLabelJugador3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_j3"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelJ3D1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvLabelJugador2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvLabelJ1D1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J1 Dado 1"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelJ1D2"
+        app:layout_constraintEnd_toStartOf="@+id/tvLabelJ2D1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelJugador1" />
+
+    <TextView
+        android:id="@+id/tvLabelJ1D2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J1 Dado 2"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelJ1D3"
+        app:layout_constraintEnd_toStartOf="@+id/tvLabelJ2D2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelJ1D1" />
+
+    <TextView
+        android:id="@+id/tvLabelJ1D3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J1 Dado 3"
+        app:layout_constraintBottom_toTopOf="@id/tvLabelGanadaJ1"
+        app:layout_constraintEnd_toStartOf="@+id/tvLabelJ2D3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelJ1D2" />
+
+    <TextView
+        android:id="@+id/tvLabelJ2D1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J2 Dado 1"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelJ2D2"
+        app:layout_constraintEnd_toStartOf="@id/tvLabelJ3D1"
+        app:layout_constraintStart_toEndOf="@+id/tvLabelJ1D1"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelJugador2" />
+
+    <TextView
+        android:id="@+id/tvLabelJ2D2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J2 Dado 2"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelJ2D3"
+        app:layout_constraintEnd_toStartOf="@id/tvLabelJ3D2"
+        app:layout_constraintStart_toEndOf="@+id/tvLabelJ1D2"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelJ2D1" />
+
+    <TextView
+        android:id="@+id/tvLabelJ2D3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J2 Dado 3"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelGanadaJ2"
+        app:layout_constraintEnd_toStartOf="@id/tvLabelJ3D3"
+        app:layout_constraintStart_toEndOf="@+id/tvLabelJ1D3"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelJ2D2"  />
+
+    <TextView
+        android:id="@+id/tvLabelJ3D1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J3 Dado 1"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelJ3D2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvLabelJ2D1"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelJugador3"  />
+
+    <TextView
+        android:id="@+id/tvLabelJ3D2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J3 Dado 2"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelJ3D3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvLabelJ2D2"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelJ3D1"/>
+
+    <TextView
+        android:id="@+id/tvLabelJ3D3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J3 Dado 3"
+        app:layout_constraintBottom_toTopOf="@+id/tvLabelGanadaJ3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvLabelJ2D3"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelJ3D2" />
+
+    <TextView
+        android:id="@+id/tvLabelResultadoPartida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvLabelResultado"
+        app:layout_constraintTop_toTopOf="@id/bJugar"/>
+
+    <TextView
+        android:id="@+id/tvLabelResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_resultado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvLabelResultadoPartida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bJugar" />
+
+    <Button
+        android:id="@+id/bJugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_button_play"
+        app:layout_constraintBottom_toTopOf="@id/tvLabelResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelPerdidoJ1"
+        android:onClick="playGame"/>
+
+    <TextView
+        android:id="@+id/tvLabelGanadaJ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_j1_ganar"
+        app:layout_constraintBottom_toTopOf="@id/tvLabelEmpateJ1"
+        app:layout_constraintEnd_toStartOf="@id/tvLabelGanadaJ2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelJ1D3" />
+
+    <TextView
+        android:id="@+id/tvLabelEmpateJ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_j1_empate"
+        app:layout_constraintBottom_toTopOf="@id/tvLabelPerdidoJ1"
+        app:layout_constraintEnd_toStartOf="@id/tvLabelEmpateJ2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelGanadaJ1"/>
+
+    <TextView
+        android:id="@+id/tvLabelPerdidoJ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_j1_perder"
+        app:layout_constraintBottom_toTopOf="@id/bJugar"
+        app:layout_constraintEnd_toStartOf="@id/tvLabelPerdidoJ2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelEmpateJ1"/>
+
+    <TextView
+        android:id="@+id/tvLabelGanadaJ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_j2_ganar"
+        app:layout_constraintBottom_toTopOf="@id/tvLabelEmpateJ2"
+        app:layout_constraintEnd_toStartOf="@id/tvLabelGanadaJ3"
+        app:layout_constraintStart_toEndOf="@id/tvLabelGanadaJ1"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelJ2D3" />
+
+    <TextView
+        android:id="@+id/tvLabelEmpateJ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_j2_empate"
+        app:layout_constraintBottom_toTopOf="@id/tvLabelPerdidoJ2"
+        app:layout_constraintEnd_toStartOf="@id/tvLabelEmpateJ3"
+        app:layout_constraintStart_toEndOf="@id/tvLabelEmpateJ1"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelGanadaJ2" />
+
+    <TextView
+        android:id="@+id/tvLabelPerdidoJ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_j3_perder"
+        app:layout_constraintBottom_toTopOf="@id/bJugar"
+        app:layout_constraintEnd_toStartOf="@id/tvLabelPerdidoJ3"
+        app:layout_constraintStart_toEndOf="@id/tvLabelPerdidoJ1"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelEmpateJ2" />
+
+    <TextView
+        android:id="@+id/tvLabelGanadaJ3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_j3_ganar"
+        app:layout_constraintBottom_toTopOf="@id/tvLabelEmpateJ3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvLabelGanadaJ2"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelJ3D3" />
+
+    <TextView
+        android:id="@+id/tvLabelEmpateJ3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_j3_empate"
+        app:layout_constraintBottom_toTopOf="@id/tvLabelPerdidoJ3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvLabelEmpateJ2"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelGanadaJ3" />
+
+    <TextView
+        android:id="@+id/tvLabelPerdidoJ3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_j3_perder"
+        app:layout_constraintBottom_toTopOf="@id/bJugar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvLabelPerdidoJ2"
+        app:layout_constraintTop_toBottomOf="@id/tvLabelEmpateJ3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
